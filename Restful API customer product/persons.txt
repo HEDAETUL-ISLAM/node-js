@@ -1,0 +1,1 @@
+[{"id":1,"name":"Hedaetul Islam bulbul","address":"rangpur","relative_list":[{"id":2,"relationship_status":"uncle"}],"relative_area":["dhaka","nikunjo1"]},{"id":2,"name":"ninad nafi","address":"dhaka","relative_list":[{"id":1,"relationship_status":"bro"}],"relative_area":["rangpur","modern"]}]

@@ -1,0 +1,1 @@
+[{"id":1,"name":"jainga","selling-price":180,"purchase-price":40,"cetagory":"under-dress","rank":5},{"id":2,"name":"jins pant full","saling_price":100,"purchase_price":50,"catagory":"pant","rank":5}]

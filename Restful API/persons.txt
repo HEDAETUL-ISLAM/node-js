@@ -1,0 +1,1 @@
+[{"id":1,"name":"Hedaetul Islam bulbul","address":"rangpur","relative_list":[{"id":2,"relationship_status":"uncle"}],"relative_area":["dhaka","nikunjo1"]}]

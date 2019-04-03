@@ -1,0 +1,1 @@
+[{"invoice_id":1,"product_list":[1,2,3],"date":"03/03/2019 ","total_price":500,"paid":1200000000000,"due":80,"customer_id":1}]

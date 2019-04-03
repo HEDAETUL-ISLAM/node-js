@@ -1,0 +1,46 @@
+const express = require("express");
+const mongoose = require("mongoose");
+
+const app = express();
+
+mongoose
+    .connect("mongodb://localhost/mongo-traning",{useNewUrlParser: true})
+    .then(() => console.log("Connected to MongoDB........"))
+    .catch(err => console.error("Couldnot connected to MongoDB...."));
+
+const productScema = mongoose.Schema({
+    name: String,
+    price: Number,
+    catagory: String,
+})
+const Product = mongoose.model('Product',productScema);
+
+//for save product
+// const product = new Product({
+//     name: "uw cc",
+//     price: 500,
+//     catagory: "underwate",
+// })
+// product
+//     .save()
+//     .then(() => console.log("saved...."))
+//     .catch(() => console.log("didn't caved"));
+
+//for get product
+
+//eq = equal, ne = not equal, gt = gretter then, lt = less then, lte = less then equal , in, not in
+// Product.find({price: { $gt: 100, $lt:500}})
+//     .or({price:{ $eq: 200}})
+//     .sort("price")
+//     .limit(2)
+//     .count()
+//     .select("price name -_id")
+//     .then(product => console.log(product))
+//     .catch(err => console.log("err...",err));
+
+//find by more option search for start /^after / for end / before$/ for  moddle /.*then.*/i
+Product.find({name:/^j/})
+    .then(product => console.log(product))
+    .catch(err => console.log("err...",err));
+
+app.listen(3000, () => console.log("listening port 3000....."));
